@@ -1,0 +1,279 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    @apply font-sans
+}
+.big-container1{
+    @apply bg-purple-50 min-h-screen relative
+}
+.btn{
+    @apply text-white bg-indigo-600 border-none rounded-sm py-2 px-5 mt-4
+}
+.nav{
+    @apply relative list-none
+}
+.logo{
+    @apply inline-block text-right ml-16 leading-3
+}
+.uList{
+    @apply w-3/4 float-right text-right py-3 px-12 inline-block font-bold text-indigo-900 text-lg
+}
+.subList{
+    @apply inline-block pl-6
+}
+.subList span{
+    @apply text-indigo-600
+}
+.empty{
+    @apply bg-indigo-600 top-0 right-0 w-56 inline-block float-right relative h-screen
+}
+.empty .img1{
+    @apply max-w-lg h-5/6 top-12 right-4 mr-12 absolute
+}
+.description{
+    @apply inline-block float-left ml-16 text-left mt-44 w-2/5 leading-8
+}
+.smallCont{
+    @apply relative h-screen   
+}
+.down{
+    @apply border-4 border-indigo-900 inline-block p-1 my-0.5 mx-5 border-t-0 border-r-2 border-b-2 border-l-0 transform rotate-45 
+}
+.bold{
+    @apply font-bold text-2xl
+}
+.bold sup{
+    @apply text-xs
+}
+.logo .small{ 
+    @apply text-xs inline w-16 pr-2
+}
+.description .p1{
+    @apply text-xl text-purple-400 tracking-wider
+}
+
+.description h1{
+    @apply text-7xl font-bold tracking-wide text-gray-700
+}
+.description .p2{
+    @apply text-indigo-600
+}
+.description p{
+    @apply py-8 text-2xl text-gray-700
+}
+.big-container2{
+    @apply relative
+}
+.big-container2 .img1{
+     @apply float-right top-0 relative right-0 max-w-prose
+}
+
+.big-container2 .img3{
+    @apply max-w-lg float-right top-0 relative right-0
+}
+.para .p1{
+    @apply inline-block text-base  
+}
+.para .span1{
+    @apply font-bold text-3xl text-gray-800
+}
+.para .span2{
+    @apply leading-7 w-11/12 inline-block pr-4
+}
+.para{
+    @apply w-2/5 ml-16 mt-44 float-left pr-2 text-gray-400
+}
+.big-container2 .img2,.img4{
+    @apply float-left top-0 left-0 max-w-lg -top-1.5 
+}
+.d2{
+    @apply w-2/5  text-gray-400 mt-44 mr-16 inline-block text-base leading-4 ml-12
+}
+.d2 .span1{
+    @apply font-bold text-3xl text-gray-800
+
+}
+.d2 .p2{
+    @apply leading-7 pr-14
+}
+.d2 ul{
+    @apply ml-16 mt-4 leading-7 pr-14
+}
+.big-container2 .d2 li::before{
+    content: url(../Imgs/cercle.png);
+    @apply mr-3 mt-3
+}
+.big-container2 .d2 img{ 
+     @apply h-5 w-0.5 ml-1.5
+ }
+ .big-container2 .d3 li::before{
+    content: url(../Imgs/cercle.png);
+    @apply mr-3 mt-3
+}
+.big-container2 .d3 img{ 
+    @apply h-5 w-0.5 ml-1.5
+}
+.d3{
+    @apply w-5/12 pr-2 text-gray-400 mt-44 inline-block text-base leading-4 ml-12
+}
+.d3 span{
+    @apply font-bold text-3xl text-gray-800
+}
+.d3 .p3,ul{
+    @apply leading-7
+}
+.big-container2 .p3{
+    @apply w-4/5 mr-16 
+}
+.d3 ul{
+    @apply ml-16 mt-4
+}
+.d4 span{
+    @apply font-bold text-3xl text-gray-800 
+}
+.d4 .p4{
+    @apply leading-7 pr-8
+}
+.d4{
+    @apply w-2/5 pr-2 text-gray-400 mt-44 mr-16 inline-block text-base leading-4 ml-12 px-6 pr-8
+}
+.big-container3{
+    background: url(../Imgs/Groupe\ 1102.png);
+    @apply bg-cover min-w-full h-4/5 relative
+
+}
+.d5{
+    @apply ml-12 pt-32 relative
+}
+.d5 h2{
+    @apply font-bold text-3xl tracking-normal w-1/2 text-white pr-12
+}
+.d5 p{
+    @apply w-4/12 text-lg font-medium text-white pb-40
+}
+.branding,.marketing,.callcenter{
+    @apply inline-block relative text-center w-56 my-2.5 mx-5 rounded-2xl shadow-sm pt-16 
+}
+.big-container4{
+    @apply relative
+}
+.big-container4 p{   
+    @apply inline-block text-left py-5 px-4 w-56 text-xs pr-6 text-gray-400
+}
+.big-container4 h4{
+    @apply text-left pl-5 
+}
+.big-container4 img{
+    @apply w-16 pl-5 
+}
+.big-container4 .arrow{
+    @apply absolute bottom-0 right-0 m-1.5 w-10 mr-4
+}
+.callcenter{
+    @apply float-left relative mt-48    
+}
+.big-container4 .small-container{
+    @apply relative inline-block h-full w-60 pt-12
+}
+.big-container4 .store{
+    @apply absolute top-0 right-0 float-right mt-40 mr-32 w-2/5 py-7 px-0
+}
+.store h2{
+    @apply font-bold text-3xl tracking-normal text-black
+}
+.store .span1{
+    @apply font-medium text-sm text-indigo-600
+}
+.store .span2{
+    @apply w-full text-base text-gray-400 inline-block py-5 pr-12
+}
+.projects{
+    @apply mt-20
+}
+.projects ul{
+    @apply list-none flex justify-center
+}
+.projects img{
+    @apply w-28 mx-2.5 my-5 
+}
+.general{
+    @apply text-white relative max-w-screen-lg bg-blue-900 m-auto z-10 text-center h-96	 
+} 
+.general .title{
+    @apply inline-block mt-2.5 text-xl text-left
+}
+.title .small{
+    @apply text-xs inline w-16
+
+} 
+.general .liste{
+    @apply mt-2.5 flex w-10/12 border-b-2 border-white m-auto relative
+}
+.liste ul{
+    @apply mx-auto pb-2.5
+}
+.liste li{
+    @apply block text-sm text-left
+}
+.liste h3{
+    @apply mb-2.5 font-bold
+}
+.socialmedia{
+    @apply py-0 px-2.5
+}
+.socialmedia img{
+    @apply pr-2.5 float-left
+}
+.socialmedia .media{
+    @apply justify-center
+}
+.mobiles{
+    /* 
+    margin-left: 40%; */
+    @apply absolute z-10 w-60 ml-96
+} 
+.mobiles img{
+    @apply w-28
+}
+.mobileft{
+    @apply block -mt-28 relative z-20
+}
+.mobileright{
+    @apply block top-0 float-right absolute right-0 z-20 -mt-20
+}
+.apps{
+    @apply h-96 relative z-0 text-center bg-gray-300 w-full -mt-8 justify-center		
+}
+.apps p{
+    @apply inline-block my-60 mx-auto w-96
+}
+.copyright{
+    @apply mt-5 text-center
+}
+.mobApps img{
+    /* width: 120px; */
+    @apply w-28	 mx-auto
+}
+.appstore{
+    @apply px-1.5	
+}
+.mobApps{
+    /* display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 35%; */
+    @apply inline-block absolute bottom-0 flex left-96
+}
+
+
+.clear{
+@apply clear-both
+}
+
