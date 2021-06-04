@@ -4,11 +4,7 @@
 
 
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-    @apply font-sans
+    @apply font-sans m-0 p-0 box-border
 }
 .big-container1{
     @apply bg-purple-50 min-h-screen relative
@@ -204,7 +200,7 @@
     @apply w-28 mx-2.5 my-5 
 }
 .general{
-    @apply text-white relative max-w-screen-lg bg-blue-900 m-auto z-10 text-center h-96	 
+    @apply text-white relative max-w-screen-lg bg-blue-900 m-auto z-0 text-center h-96	 
 } 
 .general .title{
     @apply inline-block mt-2.5 text-xl text-left
@@ -235,18 +231,13 @@
     @apply justify-center
 }
 .mobiles{
-    /* 
-    margin-left: 40%; */
-    @apply absolute z-10 w-60 ml-96
+    @apply flex z-20 -mt-24 inline max-w-max ml-auto mr-auto absolute left-0 right-0
 } 
 .mobiles img{
     @apply w-28
 }
-.mobileft{
-    @apply block -mt-28 relative z-20
-}
 .mobileright{
-    @apply block top-0 float-right absolute right-0 z-20 -mt-20
+     @apply pl-2 pb-5 -mt-5
 }
 .apps{
     @apply h-96 relative z-0 text-center bg-gray-300 w-full -mt-8 justify-center		
@@ -255,23 +246,17 @@
     @apply inline-block my-60 mx-auto w-96
 }
 .copyright{
-    @apply mt-5 text-center
+    @apply mt-5 text-center 
 }
 .mobApps img{
-    /* width: 120px; */
     @apply w-28	 mx-auto
 }
 .appstore{
     @apply px-1.5	
 }
 .mobApps{
-    /* display: inline-block;
-    position: absolute;
-    bottom: 0;
-    right: 35%; */
-    @apply inline-block absolute bottom-0 flex left-96
+    @apply inline-block max-w-max absolute bottom-0 flex left-0 right-0 ml-auto mr-auto
 }
-
 
 .clear{
 @apply clear-both
